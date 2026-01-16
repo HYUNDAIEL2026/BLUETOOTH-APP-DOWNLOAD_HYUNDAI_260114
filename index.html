@@ -9,21 +9,33 @@
         .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 300px; width: 100%; }
         h1 { font-size: 24px; color: #333; margin-bottom: 10px; }
         p { color: #666; margin-bottom: 30px; font-size: 14px; }
-        .download-btn { background-color: #007AFF; color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; transition: transform 0.2s; }
-        .download-btn:hover { transform: scale(1.05); background-color: #0056b3; }
-        .info { margin-top: 20px; font-size: 12px; color: #999; }
+        
+        /* 공통 버튼 스타일 */
+        .download-btn { color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; transition: transform 0.2s; margin-bottom: 12px; }
+        .download-btn:hover { transform: scale(1.05); opacity: 0.9; }
+        
+        /* APK 버튼 (파란색) */
+        .apk-btn { background-color: #007AFF; }
+        
+        /* PDF 버튼 (빨간색 계열 또는 회색) */
+        .pdf-btn { background-color: #5856D6; } /* 보라색 계열로 설정해 보았습니다 */
+
+        .info { margin-top: 20px; font-size: 12px; color: #999; line-height: 1.6; }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>📱 앱 설치하기</h1>
-        <p>버튼을 누르면 APK 파일<br>다운로드가 시작됩니다</p>
+        <h1>📱 앱 및 매뉴얼</h1>
+        <p>필요한 파일을 선택하여<br>다운로드 하세요</p>
         
-        <a href="my-app.apk" download="hyundai_251028.apk" class="download-btn">다운로드</a>
+        <a href="my-app.apk" download="hyundai_251028.apk" class="download-btn apk-btn">APK 다운로드</a>
         
-        <div class="info">안드로이드 전용 파일입니다</div>
+        <a href="manual.pdf" download="hyundai_manual_DSS_260116.pdf" class="download-btn pdf-btn">매뉴얼(PDF) 다운로드</a>
+        
+        <div class="info">
+            안드로이드 전용 파일입니다.<br>
+            PDF는 뷰어가 있어야 확인 가능합니다.
+        </div>
     </div>
 </body>
-
 </html>
-
