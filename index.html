@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HYUNDAI BLUETOOTH DOWNLOAD</title>
     <style>
-        body { font-family: 'Apple SD Gothic Neo', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f2f5; }
+        body { font-family: 'Apple SD Gothic Neo', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background-color: #f0f2f5; padding: 20px; }
         .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 300px; width: 100%; }
         h1 { font-size: 24px; color: #333; margin-bottom: 10px; }
-        p { color: #666; margin-bottom: 30px; font-size: 14px; }
-        .download-btn { color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; transition: transform 0.2s; margin-bottom: 12px; }
+        p { color: #666; margin-bottom: 25px; font-size: 14px; line-height: 1.5; }
+        .download-btn { color: white; padding: 15px 25px; text-decoration: none; border-radius: 12px; font-weight: bold; display: block; transition: transform 0.2s; margin-bottom: 12px; font-size: 15px; }
         .download-btn:hover { transform: scale(1.05); opacity: 0.9; }
-        .apk-btn { background-color: #007AFF; }
-        .pdf-btn { background-color: #5856D6; }
-        .info { margin-top: 20px; font-size: 12px; color: #999; line-height: 1.6; }
+        
+        /* 버튼 컬러 정의 */
+        .apk-btn { background-color: #007AFF; } /* 파랑: 앱 */
+        .pdf-btn { background-color: #5856D6; } /* 보라: 매뉴얼 */
+        .survey-btn { background-color: #34C759; } /* 초록: 설문조사 */
+        
+        .info { margin-top: 20px; font-size: 12px; color: #999; line-height: 1.6; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>📱 블루투스 앱 및 매뉴얼</h1>
-        <p>현대그룹빌딩 EL 호출용 <br>안드로이드 APK 파일입니다.</p>
+        <p>현대그룹빌딩 EL 호출용<br>안드로이드 APK 파일입니다.</p>
         
         <a href="hyundai_260116.apk" download="hyundai_260116.apk" class="download-btn apk-btn">APP 다운로드</a>
         
         <a href="hyundai_manual_DSS_v1.pdf" download="hyundai_manual_DSS_v1.pdf" class="download-btn pdf-btn">설치 매뉴얼(PDF) 다운로드</a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxHLVC3ASrFQb6pnUTLSeC5ogm5FcsjY21K4wdjwIRBEhxLg/viewform?usp=dialog" target="_blank" class="download-btn survey-btn">💡 사용 만족도 설문조사</a>
         
         <div class="info">
-            추후 충주 본사에서도 사용가능하며,<br>iOS APP 제공 예정입니다.<br><br>문의사항은 스마트전장개발팀으로 부탁드립니다.</P>
-
+            추후 충주 본사에서도 사용 가능하며,<br>iOS APP 제공 예정입니다.<br><br>
+            서비스 개선을 위해 소중한 의견을 부탁드립니다.<br>
+            (문의: 스마트전장개발팀)
         </div>
     </div>
 </body>
 </html>
-
-
 
 
 
